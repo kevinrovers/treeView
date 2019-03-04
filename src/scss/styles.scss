@@ -1,0 +1,44 @@
+$text_size: 16px;
+$max_depth: 7;
+
+ul.treeView {
+  list-style-type: none;
+  font-size: $text_size;
+
+  li {
+    padding-left: $text_size * 1.5;
+    cursor: pointer;
+    display: table;
+    clear: both;
+
+    @for $i from 0 to $max_depth {
+      &.d_#{$i+1} {
+        margin-left: 20px + ($i * $text_size);
+      }
+    }
+
+    &.folder {
+      background: url("../img/caret-down-solid.svg") no-repeat $text_size/4;
+    }
+
+    &.collapsed {
+      background: url("../img/caret-right-solid.svg") no-repeat $text_size/2;
+    }
+
+    &.item, &.noKids {
+      cursor: default;
+    }
+
+    .folder_icon {
+      padding-left: $text_size * 1.5;
+      background: url(../img/folder.svg) no-repeat;
+      background-size: $text_size + 2;
+    }
+
+    .item_icon {
+      padding-left: $text_size * 1.5;
+      background: url(../img/item.svg) no-repeat;
+      background-size: $text_size + 2;
+    }
+  }
+}

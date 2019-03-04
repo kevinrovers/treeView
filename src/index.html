@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Treeview example" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Treeview</title>
+<!-- CSS ============================================================================ -->
+    <!-- bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- main styles -->
+    <link href="css/styles.css" rel="stylesheet" />
+<!-- / CSS ========================================================================== -->
+</head>
+<body>
+<!-- Main Content =================================================================== -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <ul class="treeView">
+                    <li id="1" data-depth="1" class="base folder d_1 p_0"><span class="folder_icon">Base folder</span></li>
+                    <li id="2" data-depth="2" class="folder d_2 p_1"><span class="folder_icon">Sub folder</span></li>
+                    <li id="9" data-depth="3" class="folder d_3 p_2"><span class="folder_icon">Sub sub folder</span></li>
+                    <li id="10" data-depth="4" class="item d_4 p_9"><span class="item_icon"><a href="index.html?id=10">item</a></span></li>
+                    <li id="4" data-depth="3" class="item d_3 p_2"><span class="item_icon"><a href="index.html?id=4">item</a></span></li>
+                    <li id="5" data-depth="3" class="item d_3 p_2"><span class="item_icon"><a href="index.html?id=5">item</a></span></li>
+                    <li id="3" data-depth="2" class="folder d_2 p_1"><span class="folder_icon">Sub folder</span></li>
+                    <li id="11" data-depth="3" class="folder d_3 p_3"><span class="folder_icon">Sub sub folder</span></li>
+                    <li id="6" data-depth="3" class="item d_3 p_3"><span class="item_icon"><a href="index.html?id=6">item</a></span></li>
+                    <li id="7" data-depth="1" class="base folder d_1 p_0"><span class="folder_icon">Base folder</span></li>
+                    <li id="8" data-depth="2" class="item d_2 p_7"><span class="item_icon"><a href="index.html?id=8">Sub folder</a></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- / Main Content ================================================================= -->
+<!-- JS ============================================================================= -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap -->
+    <script src="js/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- TreeView  -->
+    <script src="js/treeView.js"></script>
+<!-- >> / JS ======================================================================== -->
+</body>
+</html>
