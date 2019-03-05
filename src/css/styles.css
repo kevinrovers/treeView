@@ -1,50 +1,41 @@
 ul.treeView {
   list-style-type: none;
-  font-size: 16px;
-}
-ul.treeView li {
-  padding-left: 24px;
-  cursor: pointer;
-  display: table;
-  clear: both;
-}
-ul.treeView li.d_1 {
-  margin-left: 20px;
-}
-ul.treeView li.d_2 {
-  margin-left: 36px;
-}
-ul.treeView li.d_3 {
-  margin-left: 52px;
-}
-ul.treeView li.d_4 {
-  margin-left: 68px;
-}
-ul.treeView li.d_5 {
-  margin-left: 84px;
-}
-ul.treeView li.d_6 {
-  margin-left: 100px;
-}
-ul.treeView li.d_7 {
-  margin-left: 116px;
-}
-ul.treeView li.folder {
-  background: url("../img/caret-down-solid.svg") no-repeat 4px;
-}
-ul.treeView li.collapsed {
-  background: url("../img/caret-right-solid.svg") no-repeat 8px;
-}
-ul.treeView li.item, ul.treeView li.noKids {
-  cursor: default;
-}
-ul.treeView li .folder_icon {
-  padding-left: 24px;
-  background: url(../img/folder.svg) no-repeat;
-  background-size: 18px;
-}
-ul.treeView li .item_icon {
-  padding-left: 24px;
-  background: url(../img/item.svg) no-repeat;
-  background-size: 18px;
-}
+  font-size: 16px; }
+  ul.treeView li {
+    padding-left: 24px;
+    cursor: pointer;
+    display: table;
+    clear: both; }
+    ul.treeView li.d_0 {
+      margin-left: 20px; }
+    ul.treeView li.d_1 {
+      margin-left: 36px; }
+    ul.treeView li.d_2 {
+      margin-left: 52px; }
+    ul.treeView li.d_3 {
+      margin-left: 68px; }
+    ul.treeView li.d_4 {
+      margin-left: 84px; }
+    ul.treeView li.d_5 {
+      margin-left: 100px; }
+    ul.treeView li.d_6 {
+      margin-left: 116px; }
+    ul.treeView li.d_7 {
+      margin-left: 132px; }
+    ul.treeView li.folder, ul.treeView li.root {
+      background: url("../img/caret-down-solid.svg") no-repeat 4px; }
+    ul.treeView li.collapsed {
+      background: url("../img/caret-right-solid.svg") no-repeat 8px; }
+    ul.treeView li.item, ul.treeView li.noKids {
+      cursor: default; }
+    ul.treeView li .root_icon, ul.treeView li .folder_icon, ul.treeView li .item_icon {
+      padding-left: 24px; }
+    ul.treeView li .root_icon {
+      background: url(../img/root.svg) no-repeat;
+      background-size: 18px; }
+    ul.treeView li .folder_icon {
+      background: url(../img/folder.svg) no-repeat;
+      background-size: 18px; }
+    ul.treeView li .item_icon {
+      background: url(../img/item.svg) no-repeat;
+      background-size: 18px; }

@@ -34,6 +34,14 @@
     }
   }
 
+  $("ul.treeView > li.root").each(function () {
+    showElement(this);
+    this.addEventListener("click", function () {
+      toggleChilds(this.id, this.classList.contains("collapsed"));
+      this.classList.toggle("collapsed");
+    });
+  });
+
   function toggleFolderArrows(item) {
     //collapse/open base folders on start
     if (!startClosed || item.classList.contains("noKids")) {

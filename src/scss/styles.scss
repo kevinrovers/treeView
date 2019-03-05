@@ -11,13 +11,13 @@ ul.treeView {
     display: table;
     clear: both;
 
-    @for $i from 0 to $max_depth {
-      &.d_#{$i+1} {
+    @for $i from 0 through $max_depth {
+      &.d_#{$i} {
         margin-left: 20px + ($i * $text_size);
       }
     }
 
-    &.folder {
+    &.folder, &.root {
       background: url("../img/caret-down-solid.svg") no-repeat $text_size/4;
     }
 
@@ -29,14 +29,21 @@ ul.treeView {
       cursor: default;
     }
 
-    .folder_icon {
+    .root_icon, .folder_icon, .item_icon {
       padding-left: $text_size * 1.5;
+    }
+
+    .root_icon {
+      background: url(../img/root.svg) no-repeat;
+      background-size: $text_size + 2;
+    }
+
+    .folder_icon {
       background: url(../img/folder.svg) no-repeat;
       background-size: $text_size + 2;
     }
 
     .item_icon {
-      padding-left: $text_size * 1.5;
       background: url(../img/item.svg) no-repeat;
       background-size: $text_size + 2;
     }

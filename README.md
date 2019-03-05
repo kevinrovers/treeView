@@ -18,12 +18,14 @@ List attributes:
 
 List elements:
 * span tag with class for icon (optional)
+  * class: "root_icon" => shows the green root icon
   * class: "folder_icon" => shows the blue folder icon
   * class: "item_icon" => shows the yellow item icon
   * empty: shows no icon
 * anchor tag for items that needs a link (optional)
 
 List class values:
+  * root (optional as root item of the treeView)
   * base (required if list item is a base folder)
   * folder (required if list item is a folder)
   * item (required if list item is an item)
@@ -36,6 +38,10 @@ NOTES:
 ## Styling
 
 SASS styling is used for this repository to make use of variables.
+To compile css from scss files you need sass to be installed. Information about installing can be found here: [SASS](https://sass-lang.com/).
+
+Go to the `src` directory and use this command: `sass --sourcemap=none scss/styles.scss css/styles.css`.
+The current styling.css file is already compiled for you.
 
 ***$text_size*** can be changed to the required value. The font and icons size will be changed with it to remain consistent with eachother.
  
